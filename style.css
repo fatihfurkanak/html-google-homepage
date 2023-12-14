@@ -1,64 +1,66 @@
-/* Genel sayfa stilleri */
+/* General page styles */
 body {
-    font-family: Arial, sans-serif; /* Sayfa üzerindeki metinlerin fontu */
-    margin: 0; /* Sayfa kenar boşluğu sıfır */
-    padding: 0; /* Sayfa içeriği etrafındaki boşluk sıfır */
-    background-color: #fff; /* Sayfa arka plan rengi beyaz */
-    display: flex; /* İçeriği yatay eksende hizalar */
-    align-items: center; /* İçeriği dikey eksende ortalar */
-    justify-content: center; /* İçeriği yatay eksende ortalar */
-    height: 100vh; /* Sayfa yüksekliği, görünür pencere yüksekliği kadar */
+    font-family: Arial, sans-serif; /* Font family for the page */
+    margin: 0; /* No margin around the page */
+    padding: 0; /* No padding inside the page */
+    background-color: #fff; /* White background color for the page */
+    display: flex; /* Flex display to align items horizontally */
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    height: 100vh; /* Full viewport height */
 }
 
-/* Ana içerik container'ının stilleri */
+/* Styles for the main content container */
 .container {
-    max-width: 600px; /* Container'ın maksimum genişliği 600 piksel */
-    padding: 20px; /* Container içeriği ile kenarları arasındaki boşluk */
-    text-align: center; /* İçeriği ortala */
+    max-width: 600px; /* Maximum width of the container */
+    padding: 20px; /* Padding around the container */
+    text-align: center; /* Center align the content */
 }
 
-/* Google logosu stilleri */
+/* Styles for the Google logo */
 .logo img {
-    width: 50%; /* Logo genişliği, içinde bulunduğu container'ın yarısı kadar */
-    height: auto; /* Otomatik yükseklik ayarı, oranı korur */
+    width: 50%; /* Logo width is 50% of its container */
+    height: auto; /* Auto height to maintain aspect ratio */
 }
 
-/* Arama çubuğu stilleri */
+/* Styles for the search bar */
 .search-bar {
-    margin-top: 20px; /* Üst boşluk 20 piksel */
-    position: relative; /* Pozisyon ayarı, içinde bulunduğu container'a göre */
+    margin-top: 20px; /* Top margin for the search bar */
+    position: relative; /* Relative position for the search bar */
 }
 
-/* Arama inputu stilleri */
+/* Styles for the search input */
 #search-input {
-    width: calc(100% - 60px); /* Genişlik, container genişliğinin 60 piksel eksisi kadar */
-    padding: 12px; /* İçerideki boşluklar */
-    font-size: 16px; /* Yazı boyutu */
-    border: 1px solid #ccc; /* Kenarlık rengi ve kalınlığı */
-    border-radius: 50px; /* Kenarlık yuvarlaklık */
-    transition: box-shadow 0.3s ease; /* Geçiş efekti, gölgeyi 0.3 saniyede değiştir */
-    padding-left: 30px; /* Sol içerideki boşluk */
+    width: calc(100% - 60px); /* Full width minus 60 pixels */
+    padding: 12px; /* Padding inside the input field */
+    font-size: 16px; /* Font size of the input text */
+    border: 1px solid #ccc; /* Border color and thickness */
+    border-radius: 50px; /* Rounded corners of the input field */
+    transition: box-shadow 0.3s ease; /* Smooth transition for the box shadow */
+    padding-left: 30px; /* Left padding inside the input field */
 }
 
-/* Arama inputu hover stili */
+/* Hover style for the search input */
 #search-input:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Hover durumunda gölge efekti */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow on hover */
 }
 
-#buttons{
-    margin-top: 10px; /* Üst boşluk 10 piksel */
-    padding: 10px 15px; /* Buton içerisindeki iç boşluklar */
-    font-size: 16px; /* Yazı boyutu */
-    cursor: pointer; /* İmleci el simgesine çevir */
-    border: none; /* Kenarlık yok */
-    background-color: #F8F9FA; /* Arka plan rengi */
-    transition: box-shadow 0.3s ease, border 0.3s ease; /* Geçiş efekti */
-    color: #000; /* Yazı rengi siyah */
-    border-radius: 8px; /* Kenarlık yuvarlaklık */
+/* Styles for buttons  */
+#buttons {
+    margin-top: 10px; /* Top margin for the buttons */
+    padding: 10px 15px; /* Padding inside the buttons */
+    font-size: 16px; /* Font size of the button text */
+    cursor: pointer; /* Pointer cursor on hover */
+    border: none; /* No border for the buttons */
+    background-color: #F8F9FA; /* Background color of the buttons */
+    transition: box-shadow 0.3s ease, border 0.3s ease; /* Smooth transition for the box shadow and border */
+    color: #000; /* Text color for the buttons */
+    border-radius: 8px; /* Rounded corners for the buttons */
 }
 
-#buttons:hover{
-    background-color: #F0F1F3; /* Hover durumunda arka plan rengi değişimi */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Hover durumunda gölge efekti */
-    border: 1px solid #ccc; /* Hover durumunda kenarlık eklenmesi */
+/* Hover style for buttons */
+#buttons:hover {
+    background-color: #F0F1F3; /* Background color change on hover */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Box shadow on hover */
+    border: 1px solid #ccc; /* Border appearance on hover */
 }
