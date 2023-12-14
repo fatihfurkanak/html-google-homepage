@@ -1,0 +1,64 @@
+/* Genel sayfa stilleri */
+body {
+    font-family: Arial, sans-serif; /* Sayfa üzerindeki metinlerin fontu */
+    margin: 0; /* Sayfa kenar boşluğu sıfır */
+    padding: 0; /* Sayfa içeriği etrafındaki boşluk sıfır */
+    background-color: #fff; /* Sayfa arka plan rengi beyaz */
+    display: flex; /* İçeriği yatay eksende hizalar */
+    align-items: center; /* İçeriği dikey eksende ortalar */
+    justify-content: center; /* İçeriği yatay eksende ortalar */
+    height: 100vh; /* Sayfa yüksekliği, görünür pencere yüksekliği kadar */
+}
+
+/* Ana içerik container'ının stilleri */
+.container {
+    max-width: 600px; /* Container'ın maksimum genişliği 600 piksel */
+    padding: 20px; /* Container içeriği ile kenarları arasındaki boşluk */
+    text-align: center; /* İçeriği ortala */
+}
+
+/* Google logosu stilleri */
+.logo img {
+    width: 50%; /* Logo genişliği, içinde bulunduğu container'ın yarısı kadar */
+    height: auto; /* Otomatik yükseklik ayarı, oranı korur */
+}
+
+/* Arama çubuğu stilleri */
+.search-bar {
+    margin-top: 20px; /* Üst boşluk 20 piksel */
+    position: relative; /* Pozisyon ayarı, içinde bulunduğu container'a göre */
+}
+
+/* Arama inputu stilleri */
+#search-input {
+    width: calc(100% - 60px); /* Genişlik, container genişliğinin 60 piksel eksisi kadar */
+    padding: 12px; /* İçerideki boşluklar */
+    font-size: 16px; /* Yazı boyutu */
+    border: 1px solid #ccc; /* Kenarlık rengi ve kalınlığı */
+    border-radius: 50px; /* Kenarlık yuvarlaklık */
+    transition: box-shadow 0.3s ease; /* Geçiş efekti, gölgeyi 0.3 saniyede değiştir */
+    padding-left: 30px; /* Sol içerideki boşluk */
+}
+
+/* Arama inputu hover stili */
+#search-input:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Hover durumunda gölge efekti */
+}
+
+#buttons{
+    margin-top: 10px; /* Üst boşluk 10 piksel */
+    padding: 10px 15px; /* Buton içerisindeki iç boşluklar */
+    font-size: 16px; /* Yazı boyutu */
+    cursor: pointer; /* İmleci el simgesine çevir */
+    border: none; /* Kenarlık yok */
+    background-color: #F8F9FA; /* Arka plan rengi */
+    transition: box-shadow 0.3s ease, border 0.3s ease; /* Geçiş efekti */
+    color: #000; /* Yazı rengi siyah */
+    border-radius: 8px; /* Kenarlık yuvarlaklık */
+}
+
+#buttons:hover{
+    background-color: #F0F1F3; /* Hover durumunda arka plan rengi değişimi */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Hover durumunda gölge efekti */
+    border: 1px solid #ccc; /* Hover durumunda kenarlık eklenmesi */
+}
